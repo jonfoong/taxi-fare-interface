@@ -16,6 +16,7 @@ const displayMap = (start, stop) => {
     zoom: 10 // starting zoom
   });
 
+
   function getRoute(end) {
     var url = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + start[0] + ',' + start[1] + ';' + end[0] + ',' + end[1] + '?steps=true&geometries=geojson&access_token=' + mapboxgl.accessToken;
 
